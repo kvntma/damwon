@@ -1,6 +1,6 @@
 'use client';
 
-import { Users, Calendar, Activity } from 'lucide-react';
+import { Home, Info, Settings } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { ThemeProvider } from '@/providers/theme-provider';
 import { Button } from '@/components/ui/button';
@@ -13,29 +13,29 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
           <div className="min-w-full flex h-14 items-center justify-between px-4 lg:px-8">
             <div className="flex w-full items-center space-x-8">
               <a href="/" className="text-xl font-bold text-primary">
-                Conveen
+                Next Template
               </a>
               <nav className="flex items-center space-x-6">
                 <a
-                  href="/groups"
+                  href="/"
                   className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Users className="h-4 w-4" />
-                  <span>Groups</span>
+                  <Home className="h-4 w-4" />
+                  <span>Home</span>
                 </a>
                 <a
-                  href="/activities"
+                  href="/about"
                   className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Activity className="h-4 w-4" />
-                  <span>Activities</span>
+                  <Info className="h-4 w-4" />
+                  <span>About</span>
                 </a>
                 <a
-                  href="/calendar"
+                  href="/settings"
                   className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Calendar className="h-4 w-4" />
-                  <span>Calendar</span>
+                  <Settings className="h-4 w-4" />
+                  <span>Settings</span>
                 </a>
               </nav>
             </div>
@@ -43,7 +43,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
               <Button variant="ghost" size="sm">
                 Log in
               </Button>
-              <Button size="sm">Get Started</Button>
+              <Button size="sm">Sign up</Button>
               <ThemeToggle />
             </div>
           </div>

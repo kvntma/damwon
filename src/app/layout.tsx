@@ -6,8 +6,8 @@ import { RootLayout } from '@/layouts/root/root-layout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gen-G',
-  description: 'A modern Next.js application with dark mode support',
+  title: 'Next.js Template',
+  description: 'A modern Next.js application template with Tailwind and shadcn/ui',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
