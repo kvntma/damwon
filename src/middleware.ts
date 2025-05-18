@@ -1,12 +1,9 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function middleware(_request: NextRequest) {
   // Example middleware for a template
   // You can add authentication, redirection, or other logic here
-
-  // Example: Log the current route path
-  console.log(`Middleware: ${request.nextUrl.pathname}`);
 
   // Continue with the request
   return NextResponse.next();
